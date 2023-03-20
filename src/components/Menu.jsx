@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import CustomLink from "./CustomLink";
 
 const menuVariants = {
   open: { rotate: 180, transition: { duration: 0.2 } },
@@ -21,8 +22,7 @@ const listVariants = {
     transition: {
       type: "spring",
       bounce: 0,
-      duration: 0.7,
-      delayChildren: 0.3,
+      duration: 0.3,
       staggerChildren: 0.05,
     },
   },
@@ -45,10 +45,11 @@ export default function Menu() {
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.4, delay: 0.4 }}
       animate={isOpen ? "open" : "closed"}
-      className="fixed z-[999] h-10 m-5 font-Aquatico"
+      className="fixed z-[999] h-10 p-5 font-Aquatico "
+      onMouseLeave={() => setIsOpen(false)}
     >
       <motion.button
-        className="flex rounded-lg p-2 h-16  uppercase items-center bg-[#803CFF] text-white font-bold text-[1.2rem]"
+        className="flex rounded-lg p-2 h-16  uppercase items-center efeitoVidroMenu text-white font-bold text-[1.2rem]"
         whileTap={{ scale: 0.97 }}
         onClick={() => setIsOpen(!isOpen)}
       >
@@ -64,35 +65,35 @@ export default function Menu() {
         </motion.div>
       </motion.button>
       <motion.ul
-        className="flex uppercase rounded-sm bg-[#803CFF] p-4 flex-col font-bold gap-3 text-[white] items-start justify-center"
+        className="flex flex-col items-start justify-center gap-3 p-4 font-bold text-white uppercase rounded-sm cursor-pointer efeitoVidroMenu"
         variants={listVariants}
         style={{ pointerEvents: isOpen ? "auto" : "none" }}
       >
-        <a href="">
-          <motion.li className="" variants={itemVariants}>
+        <CustomLink to="home">
+          <motion.li className="hover:text-[#9900ff]" variants={itemVariants}>
             &lt;Home/&gt;
           </motion.li>
-        </a>
-        <a href="">
-          <motion.li className="" variants={itemVariants}>
+        </CustomLink>
+        <CustomLink to="sobreMim">
+          <motion.li className="hover:text-[#51ff00]" variants={itemVariants}>
             &lt;Sobre Mim/&gt;
           </motion.li>
-        </a>
-        <a href="">
-          <motion.li className="" variants={itemVariants}>
+        </CustomLink>
+        <CustomLink to="tecnologias">
+          <motion.li className="hover:text-[#002fff]" variants={itemVariants}>
             &lt;Tecnologias/&gt;
           </motion.li>
-        </a>
-        <a href="">
-          <motion.li className="" variants={itemVariants}>
+        </CustomLink>
+        <CustomLink to="projetos">
+          <motion.li className="hover:text-[#F72585]" variants={itemVariants}>
             &lt;Projetos/&gt;
           </motion.li>
-        </a>
-        <a href="">
-          <motion.li className="" variants={itemVariants}>
+        </CustomLink>
+        <CustomLink to="contato">
+          <motion.li className="hover:text-[#ffe600]" variants={itemVariants}>
             &lt;Contato/&gt;
           </motion.li>
-        </a>
+        </CustomLink>
       </motion.ul>
     </motion.nav>
   );

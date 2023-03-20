@@ -20,7 +20,7 @@ export default function ContactForm() {
       initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.7 }}
-      className="antialiased pt-[14vh] pb-[8vh] lg:px-4 lg:mx-auto max-w-screen-md lg:py-[28vh]"
+      className="antialiased lg:ml-[3vw] md:mx-auto"
     >
       <h2 className="mb-[2vh] text-center text-white uppercase textoContato font-kizard">
         Entre em <span className="text-[#803cff]">contato</span> comigo

@@ -7,6 +7,7 @@ import Projetos from "@/components/Projetos";
 import Contato from "@/components/Contato";
 import Menu from "@/components/Menu";
 import RedesSociais from "@/components/RedesSociais";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Tecnologias />
       <Projetos />
       <Contato />
+      <Footer />
     </>
   );
 }

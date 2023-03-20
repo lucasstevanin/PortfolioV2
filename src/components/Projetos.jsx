@@ -11,18 +11,18 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
 export default function Projetos() {
   return (
-    <div className="relative lg:h-screen h-full lg:mx-[10%]">
-      <div className="opacity-50 absolute -top-20 left-1/2 -translate-x-1/2 -z-[9999]">
-        <h1 className="hidden lg:block text-[16vw] mt-5 font-kizard font-bold text-[#000000] tracking-wider">
+    <div id="projetos" className="relative lg:h-screen h-full lg:mx-[10%]">
+      <div className="absolute -translate-x-1/2 lg:opacity-50 lg:-top-5 left-1/2 ">
+        <h1 className="text-[17vw] text-white lg:text-[16vw] mt-5 font-kizard font-bold lg:text-[#000000] tracking-wider">
           Projetos
         </h1>
       </div>
       <div className="flex h-screen">
         <Swiper
           breakpoints={{
-            480: {
+            720: {
               slidesPerView: 3,
-              spaceBetween: 50,
+              spaceBetween: 10,
             },
           }}
           effect={"coverflow"}
@@ -152,12 +152,12 @@ export default function Projetos() {
           </SwiperSlide>
 
           <div className="slider-controler">
-            <div className="swiper-button-prev slider-arrow">
+            {/* <div className="swiper-button-prev slider-arrow">
               <ion-icon name="arrow-back-outline"></ion-icon>
             </div>
             <div className="swiper-button-next slider-arrow">
               <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
+            </div> */}
             <div className="swiper-pagination"></div>
           </div>
         </Swiper>

@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 export default function RedesSociais() {
   return (
-    <motion.div className="fixed left-[1.5rem] z-[10] top-1/2 -translate-y-1/2">
-      <motion.ul className="flex flex-col items-center justify-evenly h-52">
+    <motion.div className="max-lg:efeitoVidroMenu rounded-lg fixed mt-5 lg:left-[3rem] z-[10] lg:top-1/2 lg:-translate-y-1/2 left-[60%] -translate-x-1/2">
+      <motion.ul className="flex flex-row items-center justify-around p-2 lg:justify-evenly w-60 lg:flex-col lg:h-52">
         <motion.li
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -13,9 +13,8 @@ export default function RedesSociais() {
         >
           <motion.a target={"_blank"} href="https://github.com/lucasstevanin">
             <svg
-              className="w-[2.5rem] lg:w-[3.2rem]"
+              className="w-[3rem] lg:w-[3.2rem] fill-white lg:fill-[#767676]"
               xmlns="http://www.w3.org/2000/svg"
-              fill="#767676"
               viewBox="0 0 32 32"
             >
               <path
@@ -37,8 +36,7 @@ export default function RedesSociais() {
             href="https://www.linkedin.com/in/lucas-stevanin/"
           >
             <svg
-              className="w-[2rem] lg:w-9"
-              fill="#767676"
+              className="w-[2.4rem] lg:w-9 fill-white lg:fill-[#767676]"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1036 990"
             >
@@ -52,12 +50,10 @@ export default function RedesSociais() {
           whileInView={{ opacity: 1, scale: 1 }}
           whileHover={{ scale: 1.2 }}
           transition={{ delay: 0.4 }}
-          className="mt-2"
         >
           <motion.a target={"_blank"} href="#">
             <svg
-              className="w-[2rem] lg:w-9"
-              fill="#767676"
+              className="md:mt-2 w-[2.2rem] lg:w-9 fill-white lg:fill-[#767676]"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
             >

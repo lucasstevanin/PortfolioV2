@@ -64,7 +64,7 @@ export default function CardProjects(props) {
         </motion.div>
       </motion.div>
       {isOpen && (
-        <motion.div className="top-0 ">
+        <motion.div className="top-0 hidden lg:block ">
           <div className="font-kizard text-[#441e8b]">Tecnologias usadas:</div>
           <div className="flex justify-center items-center mb-5 border-t-2 border-b-2 border-[#441e8b]">
             <ul className="font-Roboto text-[.8rem] uppercase py-4 grid grid-cols-2 gap-x-28 gap-y-1">

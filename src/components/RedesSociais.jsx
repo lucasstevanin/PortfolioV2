@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function RedesSociais() {
   return (
-    <motion.div className="max-lg:efeitoVidroMenu rounded-lg fixed mt-5 lg:left-[3rem] z-[10] lg:top-1/2 lg:-translate-y-1/2 left-[60%] -translate-x-1/2">
+    <motion.div className="max-lg:efeitoVidroMenu rounded-lg fixed mt-5 lg:left-[3rem] z-[10] lg:top-1/2 lg:-translate-y-1/2 left-[62%] -translate-x-1/2">
       <motion.ul className="flex flex-row items-center justify-around p-2 lg:justify-evenly w-60 lg:flex-col lg:h-52">
         <motion.li
           initial={{ opacity: 0, scale: 0 }}

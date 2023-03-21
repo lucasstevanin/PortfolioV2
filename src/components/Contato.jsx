@@ -31,7 +31,7 @@ export default function Contato() {
             </div>
             <a
               target={"_blank"}
-              href="#"
+              href="https://wa.me/5514997038530?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade%20de%20emprego.%20"
               className="flex items-center text-center xl:flex-col mt-[4vh]"
             >
               <svg
@@ -51,7 +51,7 @@ export default function Contato() {
             <div className="flex xl:block mt-[4vh]">
               <a
                 target={"_blank"}
-                href="#"
+                href="https://www.linkedin.com/in/lucas-stevanin/"
                 className="flex flex-col items-center justify-center w-40 text-center"
               >
                 <svg
@@ -69,7 +69,7 @@ export default function Contato() {
               </a>
               <a
                 target={"_blank"}
-                href="#"
+                href="https://github.com/lucasstevanin"
                 className="flex flex-col items-center justify-center w-40 text-center"
               >
                 <svg

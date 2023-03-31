@@ -7,7 +7,7 @@ export default function CardProjects(props) {
 
   return (
     <motion.div
-      className="p-5 mx-auto text-white select-none efeitoVidroCard"
+      className="p-5 mx-auto text-white select-none efeitoVidroCard lg:w-[25vw]"
       // onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
       onClick={() => setIsOpen(true)}

@@ -38,6 +38,20 @@ body {
   background: #803cff !important;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #616161;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+  border: 2px solid #616161;
+}
+
 @layer components {
   .efeitoVidro {
     padding: 1.5rem;
@@ -69,7 +83,7 @@ body {
     color: white;
     font-size: 1.2rem;
     border-radius: 0.5rem;
-    width: 100%;
+    width: 90%;
     padding: 0.75rem;
   }
 

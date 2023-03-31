@@ -12,25 +12,25 @@ export default function ContactForm() {
       <h2 className="mb-[2vh] text-center text-white uppercase textoContato font-kizard">
         Entre em <span className="text-[#803cff]">contato</span> comigo
       </h2>
-      <p className="mb-[4vh] lg:mb-[8vh] textoDescritivo font-Roboto text-center uppercase tracking-wider text-[#767676]">
+      <p className="mb-[4vh] textoDescritivo font-Roboto text-center uppercase tracking-wider text-[#767676]">
         Gostou do meu portfólio e gostaria de me integrar a sua equipe? Me envie
         uma mensagem!
       </p>
       <form
         action="https://formsubmit.co/lucasstevanin@gmail.com"
         method="POST"
-        className="space-y-5 lg:space-y-8"
+        className="space-y-5 text-center lg:space-y-8"
       >
         <div>
           <input
             type="hidden"
             name="_next"
-            value="https://yourdomain.co/thanks.html"
+            value="https://lucasstevanin.vercel.app/"
           />
           <input type="hidden" name="_captcha" value="false" />
           <label
             for="name"
-            className="block mb-2 text-[4vw] lg:text-[1rem] font-Roboto font-medium text-[#803CFF] uppercase"
+            className="text-left ml-[5%] block mb-2 text-[4vw] lg:text-[1rem] font-Roboto font-medium text-[#803CFF] uppercase"
           >
             Nome
           </label>
@@ -45,7 +45,7 @@ export default function ContactForm() {
         <div>
           <label
             for="name"
-            className="block mb-2 text-[4vw] lg:text-[1rem] font-Roboto font-medium text-[#803CFF] uppercase"
+            className="text-left ml-[5%] block mb-2 text-[4vw] lg:text-[1rem] font-Roboto font-medium text-[#803CFF] uppercase"
           >
             Email
           </label>
@@ -53,14 +53,14 @@ export default function ContactForm() {
             name="email"
             type="email"
             className="input"
-            placeholder="email@gmail.com"
+            placeholder="seuemail@gmail.com"
             required
           />
         </div>
         <div className="sm:col-span-2">
           <label
             for="message"
-            className="block mb-2 text-[4vw] lg:text-[1rem] text-[#803CFF] uppercase font-Roboto font-medium"
+            className="text-left ml-[5%] block mb-2 text-[4vw] lg:text-[1rem] text-[#803CFF] uppercase font-Roboto font-medium"
           >
             Sua Mensagem
           </label>

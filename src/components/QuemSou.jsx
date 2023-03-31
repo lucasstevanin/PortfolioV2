@@ -30,8 +30,8 @@ export default function QuemSou() {
             muita música. Entrei na programação por curiosidade e me apáixonei.
             <br />
             Minha meta com a programação é desenvolver aplicações que mudem o
-            mundo, nem que seja o mínimo. Tanto o mundo dos dev's, quanto das
-            pessoas em geral.
+            mundo, nem que seja o mínimo. Tanto o mundo dos dev&rsquo;s, quanto
+            das pessoas em geral.
           </p>
 
           <button

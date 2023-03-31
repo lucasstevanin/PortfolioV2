@@ -8,13 +8,11 @@ export default function CardProjects(props) {
   return (
     <motion.div
       className="p-5 mx-auto text-white select-none efeitoVidroCard lg:w-[25vw]"
-      // onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
       onClick={() => setIsOpen(true)}
       layout
       initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      // viewport={{ once: true }}  PARA VER A ANIMAÇÃO 1 VEZ SÓ QUANDO PASSA
       transition={{
         duration: 0.7,
         layout: { duration: 1, type: "spring" },

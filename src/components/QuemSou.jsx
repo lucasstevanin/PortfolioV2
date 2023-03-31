@@ -1,5 +1,15 @@
 import React from "react";
+import { saveAs } from "file-saver";
+
 export default function QuemSou() {
+  function DownloadCV() {
+    fetch("../assets/Curriculo_Lucas_Stevanin.pdf")
+      .then((response) => response.blob())
+      .then((blob) => {
+        saveAs(blob, "Curriculo_Lucas_Stevanin.pdf");
+      });
+  }
+
   return (
     <div id="sobreMim" className="relative lg:h-screen">
       <div className="lg:mx-[10%] flex flex-col items-center justify-center h-screen">
@@ -20,7 +30,10 @@ export default function QuemSou() {
             alias ipsum natus quibusdam ea minima maiores similique magnam
           </p>
 
-          <button className="bg-[#803cff] text-white textoBotao mt-[3vh] lg:mt-[6vh] font-Aquatico py-3 px-10">
+          <button
+            onClick={DownloadCV}
+            className="bg-[#803cff] text-white textoBotao mt-[3vh] lg:mt-[6vh] font-Aquatico py-3 px-10"
+          >
             Baixar CV
           </button>
         </div>

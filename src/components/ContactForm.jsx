@@ -2,19 +2,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function ContactForm() {
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("Oportunidade de trabalho");
-  const [message, setMessage] = useState("");
-
-  const handleEmailChange = (event) => setEmail(event.target.value);
-  const handleSubjectChange = (event) => setSubject(event.target.value);
-  const handleMessageChange = (event) => setMessage(event.target.value);
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // handle form submission logic here
-  };
-
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0 }}
@@ -29,38 +16,44 @@ export default function ContactForm() {
         Gostou do meu portfólio e gostaria de me integrar a sua equipe? Me envie
         uma mensagem!
       </p>
-      <form onSubmit={handleSubmit} className="space-y-5 lg:space-y-8">
+      <form
+        action="https://formsubmit.co/lucasstevanin@gmail.com"
+        method="POST"
+        className="space-y-5 lg:space-y-8"
+      >
         <div>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://yourdomain.co/thanks.html"
+          />
+          <input type="hidden" name="_captcha" value="false" />
           <label
-            for="email"
+            for="name"
             className="block mb-2 text-[4vw] lg:text-[1rem] font-Roboto font-medium text-[#803CFF] uppercase"
           >
-            Email
+            Nome
           </label>
           <input
-            value={email}
-            onChange={handleEmailChange}
-            id="email"
-            type="email"
+            name="name"
+            type="text"
             className="input"
-            placeholder="email@gmail.com"
+            placeholder="Seu nome"
             required
           />
         </div>
         <div>
           <label
-            for="subject"
-            className="block mb-2 text-[4vw] lg:text-[1rem] text-[#803CFF] uppercase font-Roboto font-medium "
+            for="name"
+            className="block mb-2 text-[4vw] lg:text-[1rem] font-Roboto font-medium text-[#803CFF] uppercase"
           >
-            Assunto
+            Email
           </label>
           <input
-            value={subject}
-            onChange={handleSubjectChange}
-            type="text"
-            id="subject"
+            name="email"
+            type="email"
             className="input"
-            placeholder="Assunto"
+            placeholder="email@gmail.com"
             required
           />
         </div>
@@ -72,12 +65,11 @@ export default function ContactForm() {
             Sua Mensagem
           </label>
           <textarea
-            value={message}
-            onChange={handleMessageChange}
-            id="message"
+            name="message"
             rows="6"
             className="input"
             placeholder="Deixe uma mensagem"
+            required
           ></textarea>
         </div>
         <div className="flex justify-center">

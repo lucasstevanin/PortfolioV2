@@ -51,7 +51,10 @@ export default function RedesSociais() {
           whileHover={{ scale: 1.2 }}
           transition={{ delay: 0.4 }}
         >
-          <motion.a target={"_blank"} href="#">
+          <motion.a
+            target={"_blank"}
+            href="https://wa.me/5514997038530?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade%20de%20emprego.%20"
+          >
             <svg
               className="md:mt-2 w-[2.2rem] lg:w-9 fill-white lg:fill-[#767676]"
               xmlns="http://www.w3.org/2000/svg"

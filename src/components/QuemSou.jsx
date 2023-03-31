@@ -25,12 +25,10 @@ export default function QuemSou() {
           <p className="textoDescritivo mb-2 font-Roboto font-medium uppercase tracking-wider text-[#767676] lg:w-[70%] w-[90%]">
             Oi, sou o Lucas, um curioso, que transformou um antigo hobby em
             profissão.
-          </p>
-          <p className="textoDescritivo mb-2 font-Roboto font-medium uppercase tracking-wider text-[#767676] lg:w-[70%] w-[90%]">
+            <br />
             Desde pequeno sempre fui muito curioso, amante de jogos, filmes e
             muita música. Entrei na programação por curiosidade e me apáixonei.
-          </p>
-          <p className="textoDescritivo mb-2 font-Roboto font-medium uppercase tracking-wider text-[#767676] lg:w-[70%] w-[90%]">
+            <br />
             Minha meta com a programação é desenvolver aplicações que mudem o
             mundo, nem que seja o mínimo. Tanto o mundo dos dev's, quanto das
             pessoas em geral.

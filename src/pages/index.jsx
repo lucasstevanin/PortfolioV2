@@ -8,7 +8,6 @@ import Contato from "@/components/Contato";
 import Menu from "@/components/Menu";
 import RedesSociais from "@/components/RedesSociais";
 import Footer from "@/components/Footer";
-import { useEffect } from "react";
 
 export default function Home() {
   return (

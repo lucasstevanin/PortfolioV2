@@ -1,6 +1,7 @@
 import React from "react";
 import CardProjects from "./CardProjects";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -13,9 +14,14 @@ export default function Projetos() {
   return (
     <div id="projetos" className="relative lg:h-screen h-full lg:mx-[10%]">
       <div className="absolute -translate-x-1/2 lg:opacity-50 lg:-top-5 left-1/2 ">
-        <h1 className="text-[17vw] text-white lg:text-[16vw] mt-5 font-kizard font-bold lg:text-[#000000] tracking-wider">
+        <motion.h1
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
+          className="text-[17vw] text-white lg:text-[16vw] mt-5 font-kizard font-bold lg:text-[#000000] tracking-wider"
+        >
           Projetos
-        </h1>
+        </motion.h1>
       </div>
       <div className="flex h-screen">
         <Swiper
@@ -152,7 +158,12 @@ export default function Projetos() {
           </SwiperSlide>
 
           <div className="slider-controler">
-            <div className="swiper-pagination"></div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7 }}
+              className="swiper-pagination"
+            ></motion.div>
           </div>
         </Swiper>
       </div>

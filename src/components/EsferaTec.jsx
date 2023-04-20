@@ -20,7 +20,10 @@ const EsferaTec = () => {
   };
 
   const iconSlugs = [
-    "typescript",
+    "python",
+    "selenium",
+    "pandas",
+    "numpy",
     "javascript",
     "react",
     "html5",
@@ -31,10 +34,8 @@ const EsferaTec = () => {
     "git",
     "jira",
     "github",
-    "visualstudiocode",
     "figma",
     "canva",
-    "codesandbox",
   ];
   const iconTags = iconSlugs.map((slug) => ({
     id: slug,

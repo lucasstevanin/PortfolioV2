@@ -7,7 +7,7 @@ export default function CardProjects(props) {
 
   return (
     <motion.div
-      className="p-5 mx-auto text-white select-none efeitoVidroCard lg:w-[25vw]"
+      className="p-5 text-white select-none mx-auto efeitoVidroCard lg:w-[25vw]"
       onMouseLeave={() => setIsOpen(false)}
       onClick={() => setIsOpen(true)}
       layout
@@ -19,7 +19,7 @@ export default function CardProjects(props) {
       }}
       animate={{ y: isOpen ? -50 : 0 }}
     >
-      <div className="h-[18rem] bg-[#000000]">
+      <div className="h-[32vh]">
         <img className="object-cover w-full h-full" src={props.src} alt="" />
       </div>
       <motion.div className="flex flex-row items-center pt-5">

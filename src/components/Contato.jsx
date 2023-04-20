@@ -1,6 +1,7 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import { motion } from "framer-motion";
+import BackToTop from "./BackToTop";
 
 export default function Contato() {
   return (
@@ -99,6 +100,7 @@ export default function Contato() {
           <ContactForm />
         </div>
       </div>
+      <BackToTop />
     </div>
   );
 }

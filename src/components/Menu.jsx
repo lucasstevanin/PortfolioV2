@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import CustomLink from "./CustomLink";
 
 const menuVariants = {
-  open: { rotate: 180, transition: { duration: 0.2 } },
+  open: { rotate: 180, transition: { duration: 0.1 } },
   closed: { rotate: 0, transition: { duration: 0.2 } },
 };
 
@@ -69,11 +69,6 @@ export default function Menu() {
         variants={listVariants}
         style={{ pointerEvents: isOpen ? "auto" : "none" }}
       >
-        <CustomLink to="home">
-          <motion.li className="hover:text-[#9900ff]" variants={itemVariants}>
-            &lt;Home/&gt;
-          </motion.li>
-        </CustomLink>
         <CustomLink to="sobreMim">
           <motion.li className="hover:text-[#51ff00]" variants={itemVariants}>
             &lt;Sobre Mim/&gt;

@@ -7,7 +7,6 @@ export default function Apresentacao() {
       initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.7 }}
-      id="home"
       className="relative h-screen bg-[url('../assets/background-min.webp')] bg-cover
       grayscale-[40%]"
     >

@@ -4,7 +4,7 @@ import BackToTop from "./BackToTop";
 export default function Footer() {
   return (
     <>
-      <BackToTop />
+      {/* <BackToTop /> */}
       <div className="p-8 px-8 bg-black -bottom-1">
         <div className="text-center text-white font-Roboto xl:text-[1vw]">
           <p>

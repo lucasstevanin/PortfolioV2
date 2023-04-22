@@ -1,16 +1,8 @@
 import React from "react";
-import { saveAs } from "file-saver";
 import { motion } from "framer-motion";
+import BotaoCV from "./BotaoCV";
 
 export default function QuemSou() {
-  function DownloadCV() {
-    fetch("../assets/CV_Lucas_de_OliveiraStevanin.pdf")
-      .then((response) => response.blob())
-      .then((blob) => {
-        saveAs(blob, "Curriculo_Lucas_Stevanin.pdf");
-      });
-  }
-
   return (
     <div id="sobreMim" className="relative lg:h-screen">
       <div className="lg:mx-[10%] flex flex-col items-center justify-center h-screen">
@@ -40,15 +32,7 @@ export default function QuemSou() {
             das pessoas em geral.
           </motion.p>
 
-          <motion.button
-            initial={{ opacity: 0, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7 }}
-            onClick={DownloadCV}
-            className="bg-[#803cff] text-white textoBotao mt-[3vh] lg:mt-[6vh] font-Aquatico py-3 px-10"
-          >
-            Baixar CV
-          </motion.button>
+          <BotaoCV />
         </div>
       </div>
     </div>

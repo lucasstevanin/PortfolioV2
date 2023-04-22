@@ -10,6 +10,13 @@ import "swiper/css/navigation";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
+import webscraping_img from "../assets/img_web_scraping-min.webp";
+import LP01 from "../assets/img_LP01-min.webp";
+import LP02 from "../assets/img_LP02-min.webp";
+import theme_switcher from "../assets/img_theme_switcher-min.webp";
+import card_nft from "../assets/img_card_nft-min.webp";
+import to_do from "../assets/img_to_do_list-min.webp";
+
 export default function Projetos() {
   return (
     <div id="projetos" className="relative lg:h-screen h-full lg:mx-[10%]">
@@ -23,7 +30,13 @@ export default function Projetos() {
           Projetos
         </motion.h1>
       </div>
+
       <div className="flex h-screen">
+        <div className="absolute md:block hidden text-center -translate-x-1/2 top-[20%] left-1/2">
+          <h1 className="text-[1.5vw] font-Roboto uppercase text-[#767676]">
+            Clique para ampliar os cards
+          </h1>
+        </div>
         <Swiper
           breakpoints={{
             720: {
@@ -53,107 +66,90 @@ export default function Projetos() {
         >
           <SwiperSlide>
             <CardProjects
-              titulo="Projeto 01"
-              src="https://images.unsplash.com/photo-1676910226586-eb747ab85443?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-              showItem={[
-                "javascript",
-                "reactjs",
-                "nextjs",
-                "tailwind",
-                "css",
-                "html",
-                "figma",
-              ]}
+              titulo="Melhores FII's"
+              width={500}
+              height={280}
+              src={webscraping_img}
+              github={"https://github.com/lucasstevanin/Analisador_de_FII"}
+              page={"https://github.com/lucasstevanin/Analisador_de_FII"}
+              showItem={["pandas", "python", "numpy", "gmail"]}
+              description={
+                "Projeto de web scraping que pega todos os fundos imobiliarios, analisa eles com base em uma estratégia elaborado por mim e me retorna via email os melhores FII's"
+              }
             />
           </SwiperSlide>
           <SwiperSlide>
             <CardProjects
-              titulo="Projeto 01"
-              src="https://images.unsplash.com/photo-1676910226586-eb747ab85443?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-              showItem={[
-                "javascript",
-                "reactjs",
-                "nextjs",
-                "tailwind",
-                "css",
-                "html",
-                "figma",
-              ]}
+              titulo="Site empresarial"
+              src={LP01}
+              github={"https://github.com/lucasstevanin/site_empresarial"}
+              page={"https://lucasstevanin.github.io/site_empresarial/"}
+              showItem={["javascript", "css", "html", "figma"]}
+              description={
+                "site criado para ser exemplo de uma página empresarial, onde teriam todas as informações da empresa e um formulário para entrar em contato"
+              }
             />
           </SwiperSlide>
           <SwiperSlide>
             <CardProjects
-              titulo="Projeto 01"
-              src="https://images.unsplash.com/photo-1676910226586-eb747ab85443?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-              showItem={[
-                "javascript",
-                "reactjs",
-                "nextjs",
-                "tailwind",
-                "css",
-                "html",
-                "figma",
-              ]}
+              titulo="Landing Page"
+              src={LP02}
+              github={"https://github.com/lucasstevanin/landing_page"}
+              page={"https://lucasstevanin.github.io/landing_page/"}
+              showItem={["javascript", "css", "html", "figma"]}
+              description={"landing page criada para captura de emails"}
             />
           </SwiperSlide>
           <SwiperSlide>
             <CardProjects
-              titulo="Projeto 01"
-              src="https://images.unsplash.com/photo-1676910226586-eb747ab85443?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-              showItem={[
-                "javascript",
-                "reactjs",
-                "nextjs",
-                "tailwind",
-                "css",
-                "html",
-                "figma",
-              ]}
+              titulo="Theme Switcher"
+              src={theme_switcher}
+              github={"https://github.com/lucasstevanin/theme_switcher"}
+              page={"https://lucasstevanin.github.io/theme_switcher/"}
+              showItem={["javascript", "css", "html", "figma"]}
+              description={
+                "Tema onde podemos alterar entre modo escuro e modo claro"
+              }
             />
           </SwiperSlide>
           <SwiperSlide>
             <CardProjects
-              titulo="Projeto 01"
-              src="https://images.unsplash.com/photo-1676910226586-eb747ab85443?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-              showItem={[
-                "javascript",
-                "reactjs",
-                "nextjs",
-                "tailwind",
-                "css",
-                "html",
-                "figma",
-              ]}
+              titulo="NFT Preview Card"
+              src={card_nft}
+              github={"https://github.com/lucasstevanin/nft_preview_card"}
+              page={"https://lucasstevanin.github.io/nft_preview_card/"}
+              showItem={["javascript", "css", "html"]}
+              description={
+                "um desafio feito pelo 'Frontend Mentor', onde desenvolvi um visualizador de um card NFT, com valor, descrição e nome"
+              }
             />
           </SwiperSlide>
           <SwiperSlide>
             <CardProjects
-              titulo="Projeto 01"
-              src="https://images.unsplash.com/photo-1676910226586-eb747ab85443?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-              showItem={[
-                "javascript",
-                "reactjs",
-                "nextjs",
-                "tailwind",
-                "css",
-                "html",
-                "figma",
-              ]}
+              titulo="To Do List"
+              src={to_do}
+              github={"https://github.com/lucasstevanin/myToDoList"}
+              page={"https://lucasstevanin.github.io/myToDoList/"}
+              showItem={["javascript", "css", "html"]}
+              description={
+                "uma simples to-do list, onde você pode anotar suas tarefas, marca-lás como concluídas ou exclui-lás."
+              }
             />
           </SwiperSlide>
           <SwiperSlide>
             <CardProjects
-              titulo="Projeto 01"
-              src="https://images.unsplash.com/photo-1676910226586-eb747ab85443?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-              showItem={[
-                "javascript",
-                "reactjs",
-                "nextjs",
-                "tailwind",
-                "css",
-                "html",
-                "figma",
-              ]}
+              titulo="Monitor/Comparador de Preço"
+              src={webscraping_img}
+              showItem={["selenium", "pandas", "python", "excel"]}
+              github={
+                "https://github.com/lucasstevanin/monitor-comparador_de_precos"
+              }
+              page={
+                "https://github.com/lucasstevanin/monitor-comparador_de_precos"
+              }
+              description={
+                "Projeto web scraping que tem como intuito monitorar preços ou comparar preço de um mesmo produto em diversas lojas (perfeito para ecommerces ficar de olho no produto do concorrente)"
+              }
             />
           </SwiperSlide>
 

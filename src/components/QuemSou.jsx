@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function QuemSou() {
   function DownloadCV() {
-    fetch("../assets/Curriculo_Lucas_Stevanin.pdf")
+    fetch("../assets/CV_Lucas_de_OliveiraStevanin.pdf")
       .then((response) => response.blob())
       .then((blob) => {
         saveAs(blob, "Curriculo_Lucas_Stevanin.pdf");

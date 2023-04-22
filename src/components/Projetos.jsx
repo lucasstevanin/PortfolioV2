@@ -33,9 +33,14 @@ export default function Projetos() {
 
       <div className="flex h-screen">
         <div className="absolute md:block hidden text-center -translate-x-1/2 top-[20%] left-1/2">
-          <h1 className="text-[1.5vw] font-Roboto uppercase text-[#767676]">
+          <motion.h1
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7 }}
+            className="text-[1.5vw] font-Roboto uppercase text-[#767676]"
+          >
             Clique para ampliar os cards
-          </h1>
+          </motion.h1>
         </div>
         <Swiper
           breakpoints={{

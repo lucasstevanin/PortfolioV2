@@ -10,7 +10,12 @@ export default function RedesSociais() {
         transition={{ duration: 0.7 }}
         className="flex flex-row items-center justify-around p-2 rounded-lg max-lg:efeitoVidroMenu lg:justify-evenly w-60 lg:flex-col lg:h-52"
       >
-        <motion.li>
+        <motion.li
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          whileHover={{ scale: 1.2 }}
+          transition={{ delay: 0.3 }}
+        >
           <motion.a target={"_blank"} href="https://github.com/lucasstevanin">
             <svg
               className="w-[3rem] lg:w-[3.2rem] fill-white lg:fill-[#767676]"

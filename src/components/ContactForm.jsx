@@ -12,7 +12,7 @@ export default function ContactForm() {
       <h2 className="mb-[2vh] text-center text-white uppercase textoContato font-kizard">
         Entre em <span className="text-[#803cff]">contato</span> comigo
       </h2>
-      <p className="mb-[4vh] textoDescritivo font-Roboto text-center uppercase tracking-wider text-[#767676]">
+      <p className="mb-[4vh] textoDescritivo font-Aquatico text-center uppercase tracking-wider text-[#767676]">
         Gostou do meu portfólio e gostaria de me integrar a sua equipe? Me envie
         uma mensagem!
       </p>
@@ -30,7 +30,7 @@ export default function ContactForm() {
           <input type="hidden" name="_captcha" value="false" />
           <label
             for="name"
-            className="text-left ml-[5%] block mb-2 text-[4vw] lg:text-[1rem] font-Roboto font-medium text-[#803CFF] uppercase"
+            className="text-left ml-[5%] block mb-2 text-[4vw] lg:text-[1rem] font-Aquatico font-medium text-[#803CFF] uppercase"
           >
             Nome
           </label>
@@ -45,7 +45,7 @@ export default function ContactForm() {
         <div>
           <label
             for="name"
-            className="text-left ml-[5%] block mb-2 text-[4vw] lg:text-[1rem] font-Roboto font-medium text-[#803CFF] uppercase"
+            className="text-left ml-[5%] block mb-2 text-[4vw] lg:text-[1rem] font-Aquatico font-medium text-[#803CFF] uppercase"
           >
             Email
           </label>
@@ -60,7 +60,7 @@ export default function ContactForm() {
         <div className="sm:col-span-2">
           <label
             for="message"
-            className="text-left ml-[5%] block mb-2 text-[4vw] lg:text-[1rem] text-[#803CFF] uppercase font-Roboto font-medium"
+            className="text-left ml-[5%] block mb-2 text-[4vw] lg:text-[1rem] text-[#803CFF] uppercase font-Aquatico font-medium"
           >
             Sua Mensagem
           </label>
@@ -75,7 +75,7 @@ export default function ContactForm() {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="px-5 py-3 text-[1rem] font-Roboto font-bold text-center text-white bg-[#803CFF] rounded-lg"
+            className="px-5 py-3 text-[1rem] font-Aquatico font-bold text-center text-white bg-[#803CFF] rounded-lg"
           >
             Enviar Mensagem
           </button>

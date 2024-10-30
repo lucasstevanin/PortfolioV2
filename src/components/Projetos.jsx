@@ -16,6 +16,7 @@ import LP02 from "../assets/img_LP02-min.webp";
 import theme_switcher from "../assets/img_theme_switcher-min.webp";
 import card_nft from "../assets/img_card_nft-min.webp";
 import to_do from "../assets/img_to_do_list-min.webp";
+import img_quiz from "../assets/img_quiz.png"
 
 export default function Projetos() {
   return (
@@ -37,7 +38,7 @@ export default function Projetos() {
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
-            className="text-[1.5vw] font-Roboto uppercase text-[#767676]"
+            className="text-[1.5vw] font-Aquatico uppercase text-[#767676]"
           >
             Clique para ampliar os cards
           </motion.h1>
@@ -154,6 +155,22 @@ export default function Projetos() {
               }
               description={
                 "Projeto web scraping que tem como intuito monitorar preços ou comparar preço de um mesmo produto em diversas lojas (perfeito para ecommerces ficar de olho no produto do concorrente)"
+              }
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CardProjects
+              titulo="Quiz Interativo"
+              src={img_quiz}
+              showItem={["python", "reactjs", "sqlite", "typescript"]}
+              github={
+                "https://github.com/mateus040/ProjetoBootcamp"
+              }
+              page={
+                "#"
+              }
+              description={
+                "Quiz interativo de perguntas da area da programação desenvolvido como projeto final do bimestre da faculdade de ADS"
               }
             />
           </SwiperSlide>

@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 export default function BotaoCV() {
   const handleDownloadClick = () => {
-    const fileUrl = "/CV_Lucas_de_OliveiraStevanin.pdf"; // Substitua pelo URL ou caminho do seu currículo
-    const fileName = "CV_Lucas_de_OliveiraStevanin.pdf"; // Substitua pelo nome do arquivo do seu currículo
+    const fileUrl = "/CV_LucasDeOliveiraStevanin.pdf"; // Substitua pelo URL ou caminho do seu currículo
+    const fileName = "CV_LucasDeOliveiraStevanin.pdf"; // Substitua pelo nome do arquivo do seu currículo
 
     fetch(fileUrl)
       .then((response) => response.blob())

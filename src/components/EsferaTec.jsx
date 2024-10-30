@@ -35,7 +35,16 @@ const EsferaTec = () => {
     "jira",
     "github",
     "figma",
-    "canva",
+    "docker",
+    "django",
+    "java",
+    "vuedotjs",
+    "gitlab",
+    "bootstrap",
+    "tailwindcss",
+    "ubuntu",
+    "windows"
+
   ];
   const iconTags = iconSlugs.map((slug) => ({
     id: slug,

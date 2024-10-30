@@ -72,7 +72,7 @@ export default function CardProjects(props) {
         <motion.div className="top-0 hidden lg:block ">
           <div className="font-kizard text-[#441e8b]">Tecnologias usadas:</div>
           <div className="flex justify-center items-center mb-5 border-t-2 border-b-2 border-[#441e8b]">
-            <ul className="font-Roboto text-[.8rem] uppercase py-4 grid grid-cols-2 gap-x-28 gap-y-1">
+            <ul className="font-Aquatico text-[.8rem] uppercase py-4 grid grid-cols-2 gap-x-28 gap-y-1">
               {showItem.includes("reactjs") && (
                 <li className="flex items-center">
                   <svg
@@ -526,7 +526,7 @@ export default function CardProjects(props) {
               )}
             </ul>
           </div>
-          <p className="text-center uppercase font-Roboto">
+          <p className="text-center uppercase font-Aquatico">
             {props.description}
           </p>
         </motion.div>

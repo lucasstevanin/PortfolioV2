@@ -21,7 +21,7 @@ export default function QuemSou() {
             transition={{duration: 0.7}}
             className="textoDescritivo mb-2 font-Aquantico font-medium uppercase tracking-wider text-[#767676] lg:w-[70%] w-[90%]"
           >
-            Sou Lucas Stevanin, desenvolvedor front-end há 2 anos, apaixonado
+            Sou Lucas Stevanin, desenvolvedor front-end há mais de 2 anos, apaixonado
             por criar interfaces funcionais e responsivas.
             Atuo na construção de sistemas do zero, fazendo desde a prototipação
             no Figma até o desenvolvimento com VueJS, ReactJS, Python, Docker,
